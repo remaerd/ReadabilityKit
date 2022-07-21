@@ -23,7 +23,10 @@
 //  THE SOFTWARE.
 //
 
-public extension Readability {
+import Foundation
+
+public extension Readability
+{
     class func parse(data htmlData: Data, completion: @escaping (ReadabilityData?) -> ()) {
 		let isMainThread = Thread.isMainThread
         
